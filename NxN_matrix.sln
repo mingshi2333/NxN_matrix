@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.32804.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NxN_matrix", "NxN_matrix.vcxproj", "{C3981842-0A8D-4624-870D-D939EA9CF489}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0.NxN_matrix", "NxN_matrix.vcxproj", "{C3981842-0A8D-4624-870D-D939EA9CF489}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Some maps in cpp", "..\Some maps in cpp\Some maps in cpp.vcxproj", "{A951916F-9D28-4F97-94B8-16DBD30DF6F0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "map_matrix", "map_matrix\map_matrix.vcxproj", "{173A43CD-1658-4B12-8A47-F0AF4215F7FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,19 +23,19 @@ Global
 		{C3981842-0A8D-4624-870D-D939EA9CF489}.Release|x64.Build.0 = Release|x64
 		{C3981842-0A8D-4624-870D-D939EA9CF489}.Release|x86.ActiveCfg = Release|Win32
 		{C3981842-0A8D-4624-870D-D939EA9CF489}.Release|x86.Build.0 = Release|Win32
-		{A951916F-9D28-4F97-94B8-16DBD30DF6F0}.Debug|x64.ActiveCfg = Debug|x64
-		{A951916F-9D28-4F97-94B8-16DBD30DF6F0}.Debug|x64.Build.0 = Debug|x64
-		{A951916F-9D28-4F97-94B8-16DBD30DF6F0}.Debug|x86.ActiveCfg = Debug|Win32
-		{A951916F-9D28-4F97-94B8-16DBD30DF6F0}.Debug|x86.Build.0 = Debug|Win32
-		{A951916F-9D28-4F97-94B8-16DBD30DF6F0}.Release|x64.ActiveCfg = Release|x64
-		{A951916F-9D28-4F97-94B8-16DBD30DF6F0}.Release|x64.Build.0 = Release|x64
-		{A951916F-9D28-4F97-94B8-16DBD30DF6F0}.Release|x86.ActiveCfg = Release|Win32
-		{A951916F-9D28-4F97-94B8-16DBD30DF6F0}.Release|x86.Build.0 = Release|Win32
+		{173A43CD-1658-4B12-8A47-F0AF4215F7FC}.Debug|x64.ActiveCfg = Debug|x64
+		{173A43CD-1658-4B12-8A47-F0AF4215F7FC}.Debug|x64.Build.0 = Debug|x64
+		{173A43CD-1658-4B12-8A47-F0AF4215F7FC}.Debug|x86.ActiveCfg = Debug|Win32
+		{173A43CD-1658-4B12-8A47-F0AF4215F7FC}.Debug|x86.Build.0 = Debug|Win32
+		{173A43CD-1658-4B12-8A47-F0AF4215F7FC}.Release|x64.ActiveCfg = Release|x64
+		{173A43CD-1658-4B12-8A47-F0AF4215F7FC}.Release|x64.Build.0 = Release|x64
+		{173A43CD-1658-4B12-8A47-F0AF4215F7FC}.Release|x86.ActiveCfg = Release|Win32
+		{173A43CD-1658-4B12-8A47-F0AF4215F7FC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {53590A3C-BFA4-463B-8820-0710976F209B}
+		SolutionGuid = {644E1C71-6114-49D9-BE88-7AE3A16B3CAC}
 	EndGlobalSection
 EndGlobal
