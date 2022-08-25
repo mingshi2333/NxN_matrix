@@ -5,7 +5,11 @@ VisualStudioVersion = 17.4.32804.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0.NxN_matrix", "NxN_matrix.vcxproj", "{C3981842-0A8D-4624-870D-D939EA9CF489}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "map_matrix", "map_matrix\map_matrix.vcxproj", "{173A43CD-1658-4B12-8A47-F0AF4215F7FC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1.map_matrix", "map_matrix\map_matrix.vcxproj", "{173A43CD-1658-4B12-8A47-F0AF4215F7FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2.Hashmap _matrix", "Hashmap _matrix\Hashmap _matrix.vcxproj", "{DEFBFAA9-36CF-4209-83DE-5EBD0EF930F3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.Compressed Row Storage", "3.Compressed Row Storage\3.Compressed Row Storage.vcxproj", "{C5FF8093-B053-4F65-A555-11E5A73376EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,22 @@ Global
 		{173A43CD-1658-4B12-8A47-F0AF4215F7FC}.Release|x64.Build.0 = Release|x64
 		{173A43CD-1658-4B12-8A47-F0AF4215F7FC}.Release|x86.ActiveCfg = Release|Win32
 		{173A43CD-1658-4B12-8A47-F0AF4215F7FC}.Release|x86.Build.0 = Release|Win32
+		{DEFBFAA9-36CF-4209-83DE-5EBD0EF930F3}.Debug|x64.ActiveCfg = Debug|x64
+		{DEFBFAA9-36CF-4209-83DE-5EBD0EF930F3}.Debug|x64.Build.0 = Debug|x64
+		{DEFBFAA9-36CF-4209-83DE-5EBD0EF930F3}.Debug|x86.ActiveCfg = Debug|Win32
+		{DEFBFAA9-36CF-4209-83DE-5EBD0EF930F3}.Debug|x86.Build.0 = Debug|Win32
+		{DEFBFAA9-36CF-4209-83DE-5EBD0EF930F3}.Release|x64.ActiveCfg = Release|x64
+		{DEFBFAA9-36CF-4209-83DE-5EBD0EF930F3}.Release|x64.Build.0 = Release|x64
+		{DEFBFAA9-36CF-4209-83DE-5EBD0EF930F3}.Release|x86.ActiveCfg = Release|Win32
+		{DEFBFAA9-36CF-4209-83DE-5EBD0EF930F3}.Release|x86.Build.0 = Release|Win32
+		{C5FF8093-B053-4F65-A555-11E5A73376EB}.Debug|x64.ActiveCfg = Debug|x64
+		{C5FF8093-B053-4F65-A555-11E5A73376EB}.Debug|x64.Build.0 = Debug|x64
+		{C5FF8093-B053-4F65-A555-11E5A73376EB}.Debug|x86.ActiveCfg = Debug|Win32
+		{C5FF8093-B053-4F65-A555-11E5A73376EB}.Debug|x86.Build.0 = Debug|Win32
+		{C5FF8093-B053-4F65-A555-11E5A73376EB}.Release|x64.ActiveCfg = Release|x64
+		{C5FF8093-B053-4F65-A555-11E5A73376EB}.Release|x64.Build.0 = Release|x64
+		{C5FF8093-B053-4F65-A555-11E5A73376EB}.Release|x86.ActiveCfg = Release|Win32
+		{C5FF8093-B053-4F65-A555-11E5A73376EB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

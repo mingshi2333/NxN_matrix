@@ -32,7 +32,7 @@ struct Matrix
 		for(auto &[key,value]:m_data)
 		{
 			auto &[x, y] = key;
-			func(x, y);
+			func(x, y, value);
 		}
 	}
 };
@@ -66,9 +66,9 @@ int main() {
 			a->create(i + 1, i, -1);
 	}
 
-	a->foreach([&](int i, int j) {
-		w->at(i) += a->read(i, j) * v->at(j);
-		});
+	a->foreach([&](int i, int j,float &value) {
+		w->at(i) += value * v->at(j);
+	});
 
 	for (int i = 1; i < N - 1; i++) {
 		if (std::abs(2 * v->at(i) - v->at(i - 1) - v->at(i + 1) - w->at(i)) > 0.0001f) {
