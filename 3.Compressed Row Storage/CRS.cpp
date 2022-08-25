@@ -4,8 +4,8 @@
 struct Matrix
 {
 	std::vector<std::tuple<int, float>> m_data;
-	int m_row_offset[N]{0};
-	void createRow(int x,std::vector<std::tuple<int,float>> const &values)
+	size_t m_row_offset[N]{0};
+	void createRow(int x,std::vector<std::tuple<int,float>>const &values)
 	{
 		m_row_offset[x] = m_data.size();
 		for(auto &value:values)
@@ -13,14 +13,20 @@ struct Matrix
 			m_data.push_back(value);
 		}
 	}
-	template <class Func>
-	void foreach(Func&& func) {
-		for (int x = 0; x < N; x++) {
+	template<class FUNC>
+	void foreach(FUNC &&func)
+	{
+		for(int x=0;x<N;x++)
+		{
 			int row_end = x == N - 1 ? m_data.size() : m_row_offset[x + 1];
-			for (int offset = m_row_offset[x]; offset < row_end; offset++) {
+			for(int offset=m_row_offset[x];offset<row_end;offset++)
+			{
 				auto& [y, value] = m_data[offset];
 				func(x, y, value);
+
 			}
+
+			
 		}
 	}
 };
