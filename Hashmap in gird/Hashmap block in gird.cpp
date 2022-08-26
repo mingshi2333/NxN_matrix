@@ -10,6 +10,8 @@ struct Grid
     };
 
 	static constexpr int B = 16;
+	static constexpr int Bmask = 15;
+	static constexpr  int Bshift = 4;
 
 	struct Block
 	{
@@ -18,17 +20,24 @@ struct Grid
 	std::unordered_map<std::tuple<int, int>, Block, MyHash> m_data;
 	char read(int x,int y) const
 	{
-		auto it = m_data.find(std::make_tuple(x / B, y / B));
+		//auto it = m_data.find(std::make_tuple(x / B, y / B));
+
+		//                 a/b = a>> log2(b)
+		auto it = m_data.find(std::make_tuple(x >> Bshift, y >> Bshift));
 		if(it==m_data.end())
 		{
 			return 0;
 		}
-		return it->second.m_block[x % B][(y % B) / 8] & (1 << ((y % B) % 8));
+		//return it->second.m_block[x / B][(y / B) / 8] & (1 << ((y % B) % 8));
+		return it->second.m_block[x & Bmask][(y & Bmask) >> 3] & (1 << ((y & Bmask) & 7));
 	}
 	void write(int x,int y,float value)
 	{
-		Block& block = m_data[std::make_tuple(x / B, y / B)];
+		//Block& block = m_data[std::make_tuple(x / B, y / B)];
+		Block& block = m_data[std::make_tuple(x >> Bshift, y >> Bshift)];
 		//block.m_block[x % B][y % B] = value;
+
+
 		char& ref = block.m_block[x % B][(y % B) / 8];
 		if (value)
 			ref |= 1 << ((y % B) % 8);
@@ -42,7 +51,7 @@ struct Grid
 			for (int dx = 0; dx < B; dx++) {
 				for (int dy = 0; dy < B; dy++) {
 					char value = block.m_block[dx][dy / 8] & (1 << (dy % 8));
-					func(xb * B + dx, yb * B + dy, value);
+					func(xb * B | dx, yb * B | dy, value);
 					if constexpr (modified) {
 						char& ref = block.m_block[dx][dy / 8];
 						if (value)
