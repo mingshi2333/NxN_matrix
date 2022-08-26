@@ -28,6 +28,7 @@ namespace std
 		
 	};//let the structure to be a hash key  
 }
+
 int main()
 {
 	std::unordered_map<std::string, CityRecord> cityMap;

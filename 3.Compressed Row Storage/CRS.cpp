@@ -21,7 +21,7 @@ struct Matrix
 			int row_end = x == N - 1 ? m_data.size() : m_row_offset[x + 1];
 			for(int offset=m_row_offset[x];offset<row_end;offset++)
 			{
-				auto& [y, value] = m_data[offset];
+				auto&[y, value] = m_data[offset];
 				func(x, y, value);
 
 			}
