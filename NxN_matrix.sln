@@ -11,9 +11,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2.Hashmap _matrix", "Hashma
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.Compressed Row Storage", "3.Compressed Row Storage\3.Compressed Row Storage.vcxproj", "{C5FF8093-B053-4F65-A555-11E5A73376EB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sparse grid", "Sparse grid\Sparse grid.vcxproj", "{46C2638C-B2CE-49D5-AEFE-87BED6DC7DAF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.Sparse grid", "Sparse grid\Sparse grid.vcxproj", "{46C2638C-B2CE-49D5-AEFE-87BED6DC7DAF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hashmap in gird", "Hashmap in gird\Hashmap in gird.vcxproj", "{3B10C2B7-9131-47B0-9130-6141AB342806}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.Hashmap in gird", "Hashmap in gird\Hashmap in gird.vcxproj", "{3B10C2B7-9131-47B0-9130-6141AB342806}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "point in gird", "point in gird\point in gird.vcxproj", "{E33313A9-F450-495C-B50C-14C5A30EE810}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,14 @@ Global
 		{3B10C2B7-9131-47B0-9130-6141AB342806}.Release|x64.Build.0 = Release|x64
 		{3B10C2B7-9131-47B0-9130-6141AB342806}.Release|x86.ActiveCfg = Release|Win32
 		{3B10C2B7-9131-47B0-9130-6141AB342806}.Release|x86.Build.0 = Release|Win32
+		{E33313A9-F450-495C-B50C-14C5A30EE810}.Debug|x64.ActiveCfg = Debug|x64
+		{E33313A9-F450-495C-B50C-14C5A30EE810}.Debug|x64.Build.0 = Debug|x64
+		{E33313A9-F450-495C-B50C-14C5A30EE810}.Debug|x86.ActiveCfg = Debug|Win32
+		{E33313A9-F450-495C-B50C-14C5A30EE810}.Debug|x86.Build.0 = Debug|Win32
+		{E33313A9-F450-495C-B50C-14C5A30EE810}.Release|x64.ActiveCfg = Release|x64
+		{E33313A9-F450-495C-B50C-14C5A30EE810}.Release|x64.Build.0 = Release|x64
+		{E33313A9-F450-495C-B50C-14C5A30EE810}.Release|x86.ActiveCfg = Release|Win32
+		{E33313A9-F450-495C-B50C-14C5A30EE810}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
